@@ -3,20 +3,107 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #090d16;
-    --foreground: #f1f5f9;
-  }
+  --background: #5d6d9d;
+  --foreground: #21242e;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #21242e;
+  background-color: #5d6d9d;
+  background-image: 
+    linear-gradient(180deg, #6c7dae 0%, #546492 100%),
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.04) 2px, rgba(0, 0, 0, 0.04) 4px);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2001 Beveled Chrome Plate (Level 1: Flush Panel) */
+.n-plate {
+  background-color: #7a8aba;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 2px solid #3d4f97;
+  border-right: 2px solid #3d4f97;
+}
+
+/* Inset Panel (Level 0: Recessed into canvas) */
+.n-inset {
+  border-top: 2px solid #3d4f97;
+  border-left: 2px solid #3d4f97;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.85);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.85);
+}
+
+/* Raised Chip / Button (Level 2: Beveled button) */
+.n-btn-raised {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #1a1e28;
+  border-right: 2px solid #1a1e28;
+}
+.n-btn-raised:active {
+  border-top: 2px solid #1a1e28;
+  border-left: 2px solid #1a1e28;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.8);
+  transform: translate(1px, 1px);
+}
+
+/* Carbon Command Layer with Halftone Texture (Level 3) */
+.n-carbon {
+  background-color: #21242e;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 4px 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid #101217;
+}
+
+/* Box-Art Display Wordmark Typography */
+.n-boxart-display {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  -webkit-text-stroke: 1.5px #151928;
+  text-shadow: 2px 2px 0px #151928, 4px 4px 0px #3d4f97;
+  letter-spacing: -0.5px;
+}
+
+/* Silkscreened Controller Legend Typography */
+.n-ui-label {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Physical Chamfered 45° cut corner clip-path */
+.n-chamfered-top {
+  clip-path: polygon(
+    10px 0%, calc(100% - 10px) 0%, 
+    100% 10px, 100% 100%, 
+    0% 100%, 0% 10px
+  );
+}
+
+.n-chamfered-all {
+  clip-path: polygon(
+    8px 0%, calc(100% - 8px) 0%, 
+    100% 8px, 100% calc(100% - 8px), 
+    calc(100% - 8px) 100%, 8px 100%, 
+    0% calc(100% - 8px), 0% 8px
+  );
+}
+
+/* Racetrack Pill Oval */
+.n-pill {
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+::selection {
+  background-color: #f68d1f;
+  color: #ffffff;
 }
