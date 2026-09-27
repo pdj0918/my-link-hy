@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "박다정 | Frontend Developer",
-  description: "사용자 중심의 경험과 깔끔한 코드를 고민하는 프론트엔드 개발자 박다정입니다.",
+  title: "박다정 | Nintendo 2001 Console Hardware Edition",
+  description: "Nintendo.com circa 2001 Console Hardware Chrome — 프론트엔드 개발자 박다정의 링크 스테이션",
 };
 
 export default function RootLayout({
