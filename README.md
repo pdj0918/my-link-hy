@@ -1,37 +1,33 @@
-# 🎮 My-LinkHY — Nintendo 2001 Console Hardware Edition
+# 💙 My-LinkHY — Toss Design System (TDS) Edition
 
-> **"Nintendo.com circa 2001 is the web rendered as console hardware."**  
-> 프론트엔드 개발자 **박다정(Park Dajeong)** 의 Y2K 레트로 콘솔 하드웨어 크롬 링크트리 스테이션입니다.
+> **"은행에 다니는 유능한 친구 — 차분하고 효율적인, 군더더기 없는 웹 경험"**  
+> 프론트엔드 개발자 **박다정(Park Dajeong)** 의 토스 디자인 시스템(TDS) 기반 링크 프로필입니다.
 
 ---
 
-## 🕹️ Overview & Concept
+## ✨ Overview & Concept
 
-2001년 닌텐도 공식 웹사이트의 **사출 성형 플라스틱(Injection-molded plastic)** 및 **브러시드 페리윙클 메탈 플레이트(Brushed Periwinkle Metal Plates)** 디자인 시스템을 모던 프론트엔드 기술(Next.js 15, React 19, Tailwind CSS)로 정밀하게 재현한 인터랙티브 프로필 프로젝트입니다.
+토스(Toss)의 핵심 디자인 철학인 **간결성(Simplicity)**, **명확한 정보 위계(Clear Hierarchy)**, **단 하나의 주 액션(Single CTA Rule)** 을 모던 프론트엔드 기술(Next.js 15, TypeScript, Tailwind CSS)로 정밀하게 구현한 모바일 퍼스트 프로필 웹 애플리케이션입니다.
 
-* **플레이트 베벨 시스템 (Beveled Plate Hierarchy)**: 모든 영역이 모듈별로 조립된 금속판처럼 상단 하이라이트와 `{colors.chrome-indigo}` 음영 라인으로 구성
-* **카본 커맨드 레이어 (Carbon Command Layer)**: 스피커 그릴 느낌의 미세한 하프톤 도트 매트릭스 질감
-* **3단계 보이스 컬러 시스템**:
-  * 🎨 **구조 (Structural)**: Cool Periwinkle Metallic (`#7a8aba`), Light Periwinkle (`#8ba1d4`), Chrome Indigo (`#3d4f97`)
-  * ⬛ **권위 (Authority)**: Carbon Navy (`#21242e`)
-  * ⚡ **행동/방향 (Action)**: Nav Gold (`#e48600`), Amber (`#ecab37`), Signal Orange (`#f68d1f`), Nintendo Red (`#e60012`)
+* **Flat Canvas & Cool Greys**: 순수 화이트(`bg-white`)와 쿨 그레이 계열(`grey-50`, `grey-100`, `grey-900`)을 기반으로 데이터 잉크 비율을 극대화
+* **Toss Blue (`#3182F6`) 단일 강조 원칙**: 화면당 가장 핵심적인 하나의 액션에만 시그니처 블루 색상 적용
+* **부드러운 곡률(Aggressive Rounding)**: 16px/20px의 넉넉한 모서리 곡률과 999px 풀 필(Pill) 칩 시스템
+* **Pretendard 타이포그래피**: 가독성이 뛰어난 한국어 본문 시스템 폰트 적용
+* **해요체 톤앤매너**: 친절하고 명확한 대화형 어조 사용
 
 ---
 
 ## 🚀 Key Features
 
-* **마스코트 웰컴 말풍선 & 마스트헤드 검색바**
-* **듀얼 내비게이션 바**:
-  * Racetrack Pill Logo (`DAJEONG`) + Nav Gold 링크 + Amber Utility Chips (`CODE BANK`, `DEV FINDER`)
-  * Pale Sky 서브 내비게이션 스트립
-* **박스아트 히어로 패널 (Photographic Box-Art Hero Panel)**:
-  * 굵은 블랙 아웃라인과 하드 오프셋 그림자가 적용된 대형 디스플레이 워드마크
-  * Signal Orange 원형 화살표 디스크 버튼
-* **공식 릴리즈 & 네트워크 링크 (Official Releases & Links)**:
-  * GitHub, Velog 기술 블로그, 포트폴리오 웹앱, 인스타그램, 다이렉트 이메일
-* **인터랙티브 플레이어 투표 모듈 (Player's Poll 2001)**:
-  * 2001년 당시 콘솔 유저 설문조사 감성의 실시간 투표 폼
-* **하드웨어 2×2 그리드 타일 & ESRB E등급 인증 마크**
+* **TDS TopBar (56px)**: 미니멀 헤더 및 원터치 URL 공유 기능
+* **프로필 헤더 카드**: 아바타, 직무 소개, 현재 협업 상태 뱃지, 보유 기술 스택 태그
+* **카테고리 필터 칩 (TDS Chips)**: 전체 / 소셜 & 기록 / 프로젝트 / 연락처 필터링 지원
+* **TDS List-Rows 링크 리스트**:
+  * 둥근 라인 아이콘 컨테이너
+  * GitHub, Velog 기술 블로그, 프로젝트 소스, 인스타그램
+  * 이메일 원클릭 클립보드 복사
+* **Floating Primary CTA (56px)**: 하단 그라디언트 보호 레이어 위의 고정형 이메일 제안 버튼
+* **TDS 토스트 피드백**: 링크 복사 및 이메일 복사 시 즉각적인 시각적 알림 제공
 
 ---
 
@@ -40,8 +36,8 @@
 * **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
 * **Library**: [React 19](https://react.dev/)
 * **Language**: [TypeScript](https://www.typescriptlang.org/)
-* **Styling**: [Tailwind CSS v3](https://tailwindcss.com/)
-* **Deployment**: Localhost / Vercel / GitHub
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/) & Pretendard Font
+* **Version Control**: Git & GitHub
 
 ---
 
@@ -51,17 +47,8 @@
 # 의존성 설치
 npm install
 
-# 개발 서버 실행
+# 로컬 개발 서버 실행
 npm run dev
 ```
 
-브라우저에서 `http://localhost:3000`으로 접속하여 콘솔 하드웨어 에디션을 경험해 보세요.
-
----
-
-### 📬 Contact & Links
-* **GitHub**: [github.com/pdj0918](https://github.com/pdj0918)
-* **Blog**: [velog.io](https://velog.io)
-* **Email**: [p29522295@gmail.com](mailto:p29522295@gmail.com)
-
-© 1997–2001 NINTENDO OF AMERICA INC. / PARK DA JEONG ALL RIGHTS RESERVED.
+브라우저에서 `http://localhost:3000`으로 접속하여 확인할 수 있습니다.

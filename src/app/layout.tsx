@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "박다정 | Nintendo 2001 Console Hardware Edition",
-  description: "Nintendo.com circa 2001 Console Hardware Chrome — 프론트엔드 개발자 박다정의 링크 스테이션",
+  title: "박다정 | 프론트엔드 개발자",
+  description: "사용자 중심의 가치를 만드는 프론트엔드 개발자 박다정의 링크 프로필입니다.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="antialiased min-h-screen">
+      <head>
+        <link
+          rel="stylesheet"
+          as="style"
+          crossOrigin="anonymous"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+        />
+      </head>
+      <body className="antialiased min-h-screen bg-[#F9FAFB] text-[#191F28]">
         {children}
       </body>
     </html>
