@@ -1,0 +1,153 @@
+{
+  "status": 200,
+  "success": true,
+  "message": "프로필 및 링크 목록을 성공적으로 조회했습니다.",
+  "data": {
+    "user": {
+      "id": "usr_pdj0918",
+      "username": "pdj0918",
+      "name": "박다정",
+      "role": "Frontend Developer",
+      "bio": "복잡한 비즈니스 로직을 사용자가 직관적으로 이해할 수 있는 웹 인터페이스로 설계하고 개발합니다.",
+      "avatarText": "다정",
+      "avatarUrl": null,
+      "statusBadge": "커피챗 환영",
+      "techStack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "UI/UX Design"],
+      "primaryCta": {
+        "text": "이메일로 커피챗 제안하기",
+        "url": "mailto:p29522295@gmail.com"
+      }
+    },
+    "links": [
+      {
+        "id": "project-mylink",
+        "category": "project",
+        "title": "My-LinkHY 개인 링크 서비스",
+        "subtitle": "Next.js 15와 토스 디자인 시스템(TDS)으로 구축된 웹 콘솔",
+        "url": "https://github.com/pdj0918/my-link-hy",
+        "badge": "v2.0",
+        "iconType": "project",
+        "isCopyAction": false,
+        "order": 1,
+        "clicks": 142
+      },
+      {
+        "id": "project-toss-clone",
+        "category": "project",
+        "title": "토스 인터랙션 컴포넌트 랩",
+        "subtitle": "부드러운 마이크로 인터랙션과 디자인 시스템 컴포넌트 모음",
+        "url": "https://github.com",
+        "badge": "인기",
+        "iconType": "project",
+        "isCopyAction": false,
+        "order": 2,
+        "clicks": 98
+      },
+      {
+        "id": "project-wiki",
+        "category": "project",
+        "title": "DevWiki - 기술 문서 위키",
+        "subtitle": "실시간 마크다운 렌더링 및 팀 지식 공유 오픈소스 플랫폼",
+        "url": "https://github.com",
+        "badge": "NEW",
+        "iconType": "project",
+        "isCopyAction": false,
+        "order": 3,
+        "clicks": 45
+      },
+      {
+        "id": "project-algorig",
+        "category": "project",
+        "title": "알고리즘 시각화 플레이그라운드",
+        "subtitle": "정렬 및 그래프 탐색 알고리즘을 캔버스 애니메이션으로 학습",
+        "url": "https://github.com",
+        "iconType": "project",
+        "isCopyAction": false,
+        "order": 4,
+        "clicks": 31
+      },
+      {
+        "id": "social-github",
+        "category": "social",
+        "title": "GitHub 저장소",
+        "subtitle": "진행했던 오픈소스 프로젝트와 일일 커밋 기록을 확인해보세요",
+        "url": "https://github.com/pdj0918",
+        "badge": "Daily Commit",
+        "iconType": "github",
+        "isCopyAction": false,
+        "order": 5,
+        "clicks": 320
+      },
+      {
+        "id": "social-velog-tech",
+        "category": "social",
+        "title": "기술 블로그 (Velog)",
+        "subtitle": "Next.js 성능 최적화와 프론트엔드 아키텍처 고민의 기록",
+        "url": "https://velog.io",
+        "badge": "주간 BEST",
+        "iconType": "velog",
+        "isCopyAction": false,
+        "order": 6,
+        "clicks": 215
+      },
+      {
+        "id": "social-velog-retrospective",
+        "category": "social",
+        "title": "개발 회고 및 문제 해결 노트",
+        "subtitle": "실무에서 마주한 장애 대응과 리팩토링 사례 아카이빙",
+        "url": "https://velog.io",
+        "iconType": "velog",
+        "isCopyAction": false,
+        "order": 7,
+        "clicks": 89
+      },
+      {
+        "id": "social-instagram",
+        "category": "social",
+        "title": "개발자 일상 (Instagram)",
+        "subtitle": "데스크 셋업, 컨퍼런스 참가 후기 및 개발 일상을 공유해요",
+        "url": "https://instagram.com",
+        "iconType": "instagram",
+        "isCopyAction": false,
+        "order": 8,
+        "clicks": 164
+      },
+      {
+        "id": "contact-email-collab",
+        "category": "contact",
+        "title": "협업 및 프로젝트 제안",
+        "subtitle": "contact@example.com (클릭 시 주소 복사)",
+        "url": "mailto:contact@example.com",
+        "badge": "빠른 답변",
+        "iconType": "email",
+        "isCopyAction": true,
+        "order": 9,
+        "clicks": 54
+      },
+      {
+        "id": "contact-coffeechat",
+        "category": "contact",
+        "title": "1:1 커피챗 & 멘토링 신청",
+        "subtitle": "커리어 고민, 기술 이야기, 네트워킹은 언제나 환영합니다",
+        "url": "mailto:coffeechat@example.com",
+        "badge": "환영",
+        "iconType": "email",
+        "isCopyAction": true,
+        "order": 10,
+        "clicks": 76
+      },
+      {
+        "id": "contact-qna",
+        "category": "contact",
+        "title": "익명 질문 & 피드백 보내기",
+        "subtitle": "프로젝트에 대한 궁금한 점이나 피드백을 자유롭게 남겨주세요",
+        "url": "mailto:feedback@example.com",
+        "iconType": "email",
+        "isCopyAction": true,
+        "order": 11,
+        "clicks": 18
+      }
+    ]
+  },
+  "timestamp": "2026-10-03T16:50:00Z"
+}
